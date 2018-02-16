@@ -1,0 +1,36 @@
+html {
+  height: 100%
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  color: #222;
+  font-family: 'helvetica neue', arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.col-4 {
+  margin-top: 30px;
+}
+
+h1#current-conditions-icon, .forecast h3 {
+  font-size: 100px;
+}
+
+h6 {
+  font-size: 15px;
+  color: #f093fb;
+  margin-top: 10px;
+}
