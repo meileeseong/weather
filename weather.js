@@ -64,7 +64,13 @@ $(".current").fadeIn(750);
     let numberOfDays = i + 1
     let html = '<div class="col-4">';
     html = html + '<div class="card">';
-    html = html + '<h6>' + "In " + numberOfDays + " Day(s)" + '</h6>';
+    if (i === 0) {
+      html = html + '<h6>' + "Today" + '</h6>';
+    } else if (i === 1) {
+      html = html + '<h6>' + "Tomorrow" + '</h6>';
+    } else {
+      html = html + '<h6>' + "In " + numberOfDays + " days" + '</h6>';
+    };
     html = html + '<h4>' + icon(forecast.icon) + '</h4>';
     html = html + '<h4>' + Math.round(response.latitude) + '|' + Math.round(response.longitude) + '</h4>';
     html = html + '<h5>' + forecast.summary + '</h5>';
